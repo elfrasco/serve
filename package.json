@@ -1,7 +1,7 @@
 {
-  "name": "serve",
+  "name": "directory-serve",
   "version": "11.3.0",
-  "description": "Static file serving and directory listing",
+  "description": "Static file serving and directory listing (Hacked by elfrasco)",
   "scripts": {
     "test": "yarn lint",
     "lint": "zeit-eslint --ext .jsx,.js .",
