@@ -1,6 +1,6 @@
 {
   "name": "botbit-directory-serve",
-  "version": "11.3.0",
+  "version": "11.3.0-botbit",
   "description": "Static file serving and directory listing (Hacked by elfrasco)",
   "scripts": {
     "test": "yarn lint",
