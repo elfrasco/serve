@@ -184,7 +184,6 @@ const startEndpoint = (endpoint, config, args, previous) => {
 	const httpMode = args['--ssl-cert'] && args['--ssl-key'] ? 'https' : 'http';
 
 	const serverHandler = async (request, response) => {
-
 		// ADRIAN: HACK!!! Que la historia me juzgue!!
 		if (request.headers.host.includes('aquiperto.chat')) {
 			config.rewrites[0] = {
