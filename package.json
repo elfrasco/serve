@@ -12,7 +12,7 @@
   ],
   "repository": "elfrasco/serve",
   "bin": {
-    "serve": "./bin/botbit-directory-serve.js"
+    "botbit-directory-serve": "./bin/botbit-directory-serve.js"
   },
   "keywords": [
     "now",
