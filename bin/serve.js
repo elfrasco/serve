@@ -242,7 +242,7 @@ const startEndpoint = (endpoint, config, args, previous) => {
 		}
 
 		if (isTTY && process.env.NODE_ENV !== 'production') {
-			let message = chalk.green('Serving!');
+			let message = chalk.green('Serving! === botbit-directory ===');
 
 			if (localAddress) {
 				const prefix = networkAddress ? '- ' : '';
