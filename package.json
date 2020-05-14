@@ -1,5 +1,5 @@
 {
-  "name": "directory-serve",
+  "name": "botbit-directory-serve",
   "version": "11.3.0",
   "description": "Static file serving and directory listing (Hacked by elfrasco)",
   "scripts": {
