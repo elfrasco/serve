@@ -10,9 +10,9 @@
   "files": [
     "bin"
   ],
-  "repository": "zeit/serve",
+  "repository": "elfrasco/serve",
   "bin": {
-    "serve": "./bin/serve.js"
+    "serve": "./bin/botbit-directory-serve.js"
   },
   "keywords": [
     "now",
@@ -20,7 +20,7 @@
     "micro",
     "http-server"
   ],
-  "author": "leo",
+  "author": "leo / elfrasco",
   "license": "MIT",
   "devDependencies": {
     "@zeit/eslint-config-node": "0.3.0",
