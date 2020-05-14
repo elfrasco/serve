@@ -10,7 +10,10 @@
   "files": [
     "bin"
   ],
-  "repository": "elfrasco/serve",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elfrasco/serve.git"
+  },
   "bin": {
     "botbit-directory-serve": "./bin/botbit-directory-serve.js"
   },
