@@ -184,6 +184,20 @@ const startEndpoint = (endpoint, config, args, previous) => {
 	const httpMode = args['--ssl-cert'] && args['--ssl-key'] ? 'https' : 'http';
 
 	const serverHandler = async (request, response) => {
+
+		// ADRIAN: HACK!!! Que la historia me juzgue!!
+		if (request.headers.host.includes('aquiperto.chat')) {
+			config.rewrites[0] = {
+				source: '**',
+				destination: '/aquiperto.html'
+			};
+		} else {
+			config.rewrites[0] = {
+				source: '**',
+				destination: '/index.html'
+			};
+		}
+
 		if (args['--cors']) {
 			response.setHeader('Access-Control-Allow-Origin', '*');
 		}
