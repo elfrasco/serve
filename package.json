@@ -15,7 +15,7 @@
     "url": "git+https://github.com/elfrasco/serve.git"
   },
   "bin": {
-    "botbit-directory-serve": "./bin/botbit-directory-serve.js"
+    "serve": "./bin/serve.js"
   },
   "keywords": [
     "now",
