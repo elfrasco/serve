@@ -185,7 +185,7 @@ const startEndpoint = (endpoint, config, args, previous) => {
 
 	const serverHandler = async (request, response) => {
 		// ADRIAN: HACK!!! Que la historia me juzgue!!
-		if (request && request.headers && request.headers.host && request.headers.host.includes('yopido3.botbit.io')) {
+		if (request && request.headers && request.headers.host && request.headers.host.includes('aquiperto.chat')) {
 			config.rewrites[0] = {
 				source: '**',
 				destination: '/aquiperto.html'
