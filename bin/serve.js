@@ -197,6 +197,9 @@ const startEndpoint = (endpoint, config, args, previous) => {
 			};
 		}
 
+		console.log('===============================');
+		console.log('Request: ', request);
+
 		if (args['--cors']) {
 			response.setHeader('Access-Control-Allow-Origin', '*');
 		}
