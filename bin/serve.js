@@ -207,8 +207,6 @@ const startEndpoint = (endpoint, config, args, previous) => {
 		} else {
 			console.log('There is not request.headers');
 		}
-		console.log('===============================');
-		console.log('referer: ', request);
 
 		if (args['--cors']) {
 			response.setHeader('Access-Control-Allow-Origin', '*');
