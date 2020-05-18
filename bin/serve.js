@@ -186,11 +186,13 @@ const startEndpoint = (endpoint, config, args, previous) => {
 	const serverHandler = async (request, response) => {
 		// ADRIAN: HACK!!! Que la historia me juzgue!!
 		if (request && request.headers && request.headers['x-forwarded-host'] && request.headers['x-forwarded-host'].includes('aquiperto.chat')) {
+			console.log('GETTIN IN AQUI PERTO');
 			config.rewrites[0] = {
 				source: '**',
 				destination: '/aquiperto.html'
 			};
 		} else {
+			console.log('GETTIN IN YO PIDO');
 			config.rewrites[0] = {
 				source: '**',
 				destination: '/index.html'
@@ -198,7 +200,15 @@ const startEndpoint = (endpoint, config, args, previous) => {
 		}
 
 		console.log('===============================');
-		console.log('Request: ', request);
+		if (request && request.headers) {
+			console.log('x-forwarded-host', request.headers['x-forwarded-host']);
+			console.log('referer', request.headers.referer);
+			console.log('Attribute does not exists', request.headers.noexiste);
+		} else {
+			console.log('There is not request.headers');
+		}
+		console.log('===============================');
+		console.log('referer: ', request);
 
 		if (args['--cors']) {
 			response.setHeader('Access-Control-Allow-Origin', '*');
