@@ -288,7 +288,7 @@ const startEndpoint = (endpoint, config, args, previous) => {
 			}));
 		} else {
 			const suffix = localAddress ? ` at ${localAddress}` : '';
-			console.log(info(`Accepting connections${suffix}`));
+			console.log(info(`botbit-directory: Accepting connections${suffix}`));
 		}
 	});
 };
