@@ -187,16 +187,16 @@ const startEndpoint = (endpoint, config, args, previous) => {
 		// ADRIAN: HACK!!! Que la historia me juzgue!!
 		if (request && request.headers && request.headers['x-forwarded-host'] && request.headers['x-forwarded-host'].includes('aquiperto.chat')) {
 			console.log('GETTIN IN AQUI PERTO');
-			config.rewrites[0] = {
-				source: '**',
+			config.rewrites = [{
+				source: '!static/**',
 				destination: '/aquiperto.html'
-			};
+			}];
 		} else {
 			console.log('GETTIN IN YO PIDO');
-			config.rewrites[0] = {
-				source: '**',
+			config.rewrites = [{
+				source: '!static/**',
 				destination: '/index.html'
-			};
+			}];
 		}
 
 		console.log('===============================');
